@@ -6,18 +6,18 @@ To get the duration your code took to run, just pass your code as a yield into y
 # ****************
 ex: you want to measure the duration of iterating from 0 to 1000000
 
-timer = Timer.new
+    timer = Timer.new
 
-iteration_timer = timer.duration { 
+    iteration_timer = timer.duration { 
 
-    i = 0
+        i = 0
 
-    while i < 1000000
+        while i < 1000000
 
-        i += 1
+            i += 1
 
-    end
+        end
 
-}
+    }
 
 Now iteration_timer = some seconds

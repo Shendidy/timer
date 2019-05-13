@@ -1,7 +1,7 @@
 class Timer
   def duration
     start_time = Time.now
-    # puts "starting time: #{start_time}"
+    # puts "starting time: #{start_time}" 
     yield
     end_time = Time.now
     # puts "End time: #{end_time}"

@@ -1,4 +1,5 @@
 require '../timer'
+require '../lib/reverse'
 
 class Test
 
@@ -18,7 +19,7 @@ class Test
       durations = []
       while test_loops < 100
         duration_of_getting_first = timer.duration{
-          test_arr.reverse # also used it for .first, .last, .sort, & .shuffle
+          test_arr.reverse
         }
         durations << duration_of_getting_first
         test_loops += 1
@@ -38,5 +39,5 @@ class Test
   end
 end
 
-first = First.new
-first.run
+test = Test.new
+test.run

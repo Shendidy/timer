@@ -19,7 +19,7 @@ class Test
       durations = []
       while test_loops < 100
         duration_of_getting_first = timer.duration{
-          test_arr.reverse
+          reverse(test_arr)
         }
         durations << duration_of_getting_first
         test_loops += 1

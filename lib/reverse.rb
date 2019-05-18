@@ -6,9 +6,9 @@ end # final type of complexity is "O(n)"
 
 def reverse_push(arr)
   new_array = [] # O(1)
-  i = arr.length # O(1)
-  while i > 0 # O(1)
-    new_array << arr[i - 1] # O(n)
+  i = arr.length - 1 # O(1)
+  while i >= 0 # O(1)
+    new_array << arr[i] # O(n)
     i -= 1 # O(n)
   end
   new_array # O(1)
